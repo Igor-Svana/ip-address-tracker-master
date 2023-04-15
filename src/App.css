@@ -1,5 +1,6 @@
 :root {
-  --arrow-box: 4.1em;
+  --arrow-box-height: 100%;
+  --arrow-box-width: 4em;
   --very-dark-grey: hsl(0, 0%, 17%);
   --dark-gray: hsl(0, 0%, 59%);
   --header-hight-desctop: 35%;
@@ -41,6 +42,7 @@
 
 .input-container {
   height: 3em;
+  position: relative;
   display: flex;
   justify-content: flex-end;
 }
@@ -57,8 +59,8 @@ input {
 
 .header-section button {
   background: var(--very-dark-grey);
-  width: var(--arrow-box);
-  height: var(--arrow-box);
+  width: var(--arrow-box-width);
+  height: var(--arrow-box-height);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -196,8 +198,6 @@ hr {
     text-align: center;
     padding: .8em 0;
     row-gap: .3em;
-    transform: translateY(0%);
-    top: 25vh;
   }
 
   .ip-info-container{
