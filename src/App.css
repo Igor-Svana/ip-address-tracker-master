@@ -196,6 +196,8 @@ hr {
     text-align: center;
     padding: .8em 0;
     row-gap: .3em;
+    transform: translateY(0%);
+    top: 25vh;
   }
 
   .ip-info-container{
