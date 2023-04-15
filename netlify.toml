@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/*"
-  to = "https://geo.ipify.org"
+  to = "/index.html"
   status = 200
  
  # These are optional
