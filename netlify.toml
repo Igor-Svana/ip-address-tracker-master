@@ -1,0 +1,8 @@
+[[redirects]]
+  from = "/search"
+  to = "https://geolocation-db.com/json/"
+  status = 200
+ 
+ # These are optional
+  force = true
+  headers = {X-From = "Netlify"}
