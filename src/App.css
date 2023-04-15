@@ -69,6 +69,7 @@ input {
   cursor: pointer;
   transition: 300ms;
   border: none;
+  transition: transform 200ms linear;
 }
 
 .header-section button:hover {
@@ -210,5 +211,11 @@ hr {
   }
   input {
     width: 90vw;    
+  }
+  .header-section button:hover {
+    background: var(--very-dark-grey);
+  }
+  .header-section button:active img {
+   transform: scale(1.3);
   }
 }
