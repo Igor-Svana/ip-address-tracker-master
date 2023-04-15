@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/*"
-  to = "https://geolocation-db.com/json/"
+  to = "https://geolocation-db.com"
   status = 200
  
  # These are optional
