@@ -1,0 +1,27 @@
+
+.ip-info-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 2em 0 0 1.5em;
+}
+
+.ip-info-container span{
+    color: var(--dark-gray);
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.ip-info-container h1{
+    font-weight: 500;
+    word-break: break-word;
+}
+
+@media (max-width: 490px){
+    .info-box span{
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: .1em;
+      }
+}
