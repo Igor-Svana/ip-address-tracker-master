@@ -10,8 +10,8 @@ const InfoBox = ({label, info, country}:IInfoBox) => {
     return(
         <div className='ip-info-container'>
             <span>{label}</span>
-            <h1 style={{color:"var(--very-dark-grey)"}}>{info ? info : ""}</h1>
-            <h1 style={{color:"var(--very-dark-grey)"}}>{country ? country : ""}</h1>
+            <p style={{color:"var(--very-dark-grey)"}}>{info ? info : ""}</p>
+            <p style={{color:"var(--very-dark-grey)"}}>{country ? country : ""}</p>
         </div>
     )
 }
