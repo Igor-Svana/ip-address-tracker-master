@@ -32,21 +32,7 @@ function App() {
   };
 
   useEffect(() => {
-    const fetchOwnIP = async () => {
-      try {
-        const ownIp = await axios.get("https://geolocation-db.com/json/");
-        const res = await axios.get(
-          `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=${
-            import.meta.env.VITE_API_KEY
-          }&ipAddress=${ownIp.data.IPv4}`
-        );
-        setIpAddressData(res.data);
-        setLoading(false);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    fetchOwnIP();
+    fetchDomain()
     window.addEventListener("keydown", keyFunction);
     return () => {
       window.removeEventListener("keydown", keyFunction);
@@ -88,9 +74,9 @@ function App() {
               ref={ref}
               placeholder="Search for any IP address of domain"
             />
-            <label htmlFor="input" onClick={fetchDomain}>
+            <button type="submit" onClick={fetchDomain}>
               <img src={arrow} alt="arrow" />
-            </label>
+            </button>
           </div>
         </div>
 

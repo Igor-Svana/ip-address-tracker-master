@@ -1,8 +1,9 @@
 :root {
-  --arrow-box: 3em;
+  --arrow-box: 4.1em;
   --very-dark-grey: hsl(0, 0%, 17%);
   --dark-gray: hsl(0, 0%, 59%);
   --header-hight-desctop: 35%;
+  --header-hight-tablet: 25%;
   --header-hight-mobile: 40%;
 }
 
@@ -54,7 +55,7 @@ input {
   padding: 0 1em;
 }
 
-.header-section label {
+.header-section button {
   background: var(--very-dark-grey);
   width: var(--arrow-box);
   height: var(--arrow-box);
@@ -65,9 +66,10 @@ input {
   border-radius: 0 10px 10px 0;
   cursor: pointer;
   transition: 300ms;
+  border: none;
 }
 
-.header-section label:hover {
+.header-section button:hover {
   background: var(--dark-gray);
 }
 
@@ -158,10 +160,16 @@ hr {
 }
 
 @media (max-width:820px){
+  .header-section{
+    height: var(--header-hight-tablet);
+  }
+  .info-container{
+    height: var(--header-hight-tablet);
+  }
   .info-box{
     width: 90%;
     font-size: 14px;
-    height: 35%;
+    height: 40%;
   }
   input {
     width: 60vw;    
