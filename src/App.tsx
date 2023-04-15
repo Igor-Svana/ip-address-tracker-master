@@ -96,7 +96,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="map-container">
+      <div className="map-container">
         {loading === false && ipAddressData?.location.lat && (
           <MapBox
             lat={ipAddressData?.location.lat ? ipAddressData?.location.lat : 0}
@@ -115,7 +115,7 @@ function App() {
             <Spinner />
           </div>
         )}
-      </section>
+      </div>
     </main>
   );
 }
